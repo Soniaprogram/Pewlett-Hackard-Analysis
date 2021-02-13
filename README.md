@@ -1,21 +1,24 @@
 # Pewlett-Hackard-Analysis
 
-Now that Bobby has proven his SQL chops, his manager has given both of you two more assignments: determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. 
+## Overview of the analysis
+
+Pewlett Hackard is looking to offer retirement packages to eligible employees. Bobby, is a HR analyst tasked with researching who is retiring and how many positions will need to be filled in the company. All employee data is currently stored in six .csv files. I will assist Bobby by building an employee database with SQL by applying my data modelling, engineering, and analysis skills 
+
+This analysis will focus on determining the number of retiring employees per title and identifying which employees are eligible to participate in a mentorship program. 
+
+For this analysis, I generated an Entity Relationship Diagram (as seen below) to highlight the relational data and created tables in SQL for each of the 6 .csv files to build up the employee database. 
+
+![ERD](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
 
 Deliverable 1: The Number of Retiring Employees by Title
 
-Using the ERD you created in this module as a reference and your knowledge of SQL queries, create a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. 
+Using the ERD I created as a reference, I created a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. 
 
 Deliverable 2: The Employees Eligible for the Mentorship Program
 
-Using the ERD you created in this module as a reference and your knowledge of SQL queries, create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
+Using the ERD and SQL Queries, I also created a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
 
-For this part of the Challenge, you’ll write a report to help the manager prepare for the upcoming "silver tsunami."
-
-## Overview of the analysis
-Explain the purpose of this analysis.
-
-Now that Bobby has proven his SQL chops, his manager has given both of you two more assignments: determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, you’ll write a report that summarizes your analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
+This analysis will allow the manager of Pewlett Hackard to prepare for the upcoming "silver tsunami" as many current employees reach retirement age. 
 
 ## Results
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
