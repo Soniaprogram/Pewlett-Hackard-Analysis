@@ -1,9 +1,14 @@
 # Pewlett-Hackard-Analysis
 
+Now that Bobby has proven his SQL chops, his manager has given both of you two more assignments: determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. 
 
 Deliverable 1: The Number of Retiring Employees by Title
 
+Using the ERD you created in this module as a reference and your knowledge of SQL queries, create a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. 
+
 Deliverable 2: The Employees Eligible for the Mentorship Program
+
+Using the ERD you created in this module as a reference and your knowledge of SQL queries, create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
 
 For this part of the Challenge, you’ll write a report to help the manager prepare for the upcoming "silver tsunami."
 
