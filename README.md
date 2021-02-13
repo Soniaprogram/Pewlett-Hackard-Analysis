@@ -10,11 +10,13 @@ For this analysis, I generated an Entity Relationship Diagram (as seen below) to
 
 ![ERD](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
 
-Deliverable 1: The Number of Retiring Employees by Title
+***Image 1: Entity Relationship Diagram***
+
+#### Deliverable 1: The Number of Retiring Employees by Title
 
 Using the ERD I created as a reference, I created a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. 
 
-Deliverable 2: The Employees Eligible for the Mentorship Program
+#### Deliverable 2: The Employees Eligible for the Mentorship Program
 
 Using the ERD and SQL Queries, I also created a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
 
@@ -24,17 +26,30 @@ Provide a bulleted list with four major points from the two analysis deliverable
 For Deliverable 1, I created my first query to retrieve the required columns from the Employees and Titles table and joined both tables on the primary key. I created a new table called retirement_titles to contain this data. I filtered the data to show the employees born between Jan 1, 1952 and Dec 31, 1955 and ordered by the employee number. 
 The outputted table had duplicate entires for employees with multiple titles over the years.
 Show Retirement Titles
+![Retirement_Titles](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/retirementtitles.PNG)
+
+***Image 2: Retirement Titles***
 
 For the second query, I removed these duplicates to keep the most recent employee title using DISTINCT ON. I created a new table called Unique Titles, sorted in ascending order by employee number and descending order by the last date of the most recent title. 
 As a result, there were no duplicate entries. 
 Show Unique Titles
+![Unique_Titles](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/uniquetitles.PNG)
+
+***Image 3: Unique Titles***
 
 For the next query, I retrieved the number of titles from the Unique Titles table, grouped by title, and sorted the count column in descending order. This way, I could see the amount of employees eligible for retirement organized by current title. 
 Show retiring titles
+![Retiring_Titles](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/retiringtitles.PNG)
+
+***Image 4: Retiring Titles***
 
 For Deliverable 2, I wrote a query to retrieve the required columns from the Employees, dep_emp, and titles tables. I used a DISTINCT ON statement to avoid duplicate results so it would only retrieve the first instance of employee number. I joined the tables and filtered to 
 I ordered the table by employee number
 Show mentorship eligibility
+
+![Mentorship eligibility](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/deliverable2.PNG)
+
+***Image 5: Mentorship Eligibility***
 
 ## Summary
 Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
