@@ -66,7 +66,7 @@ INNER JOIN titles
 ON employees.emp_no = titles.emp_no
 WHERE (employees.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (dept_emp.to_date = '9999-01-01')
-ORDER BY employees.emp_no;
+ORDER BY employees.emp_no, titles.to_date DESC;
 -- Filter the data on the to_date column to get current employees whose birth dates are between
 -- January 1, 1965 and December 31, 1965. Order the table by the employee number.
 SELECT * FROM mentorship_eligibility;
