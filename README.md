@@ -27,7 +27,7 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 For Deliverable 1, I created my first query to retrieve the required columns from the Employees and Titles table and joined both tables on the primary key. I created a new table called retirement_titles to contain this data. I filtered the data to show the employees born between Jan 1, 1952 and Dec 31, 1955 and ordered by the employee number. The outputted table had duplicate entires for employees with multiple titles over the years.
 
-![QueryRetirement_Titles](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/query1retirementtitles.PNG)
+![QueryRetirement_Titles](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/query1retirement_titles.PNG)
 
 ![Retirement_Titles](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/retirementtitles.PNG)
 
@@ -52,7 +52,7 @@ For the next query, I retrieved the number of titles from the Unique Titles tabl
 ***Image 4: Retiring Titles***
 
 ### Deliverable 2: Mentorship Eligibility
-For Deliverable 2, I wrote a query to retrieve the required columns from the Employees, dep_emp, and titles tables. I used a DISTINCT ON statement to avoid duplicate results so it would only retrieve the first instance of employee number. I joined the tables and filtered to get current employees with birth dates between Jan 1, 1965 qnd Dec 31, 1965. I ordered the table by employee number.
+For Deliverable 2, I wrote a query to retrieve the required columns from the employees, dep_emp, and titles tables. I used a DISTINCT ON statement to avoid duplicate results so it would only retrieve the first instance of employee number. I joined the tables and filtered to get current employees with birth dates between Jan 1, 1965 and Dec 31, 1965. I ordered the table by employee number.
 
 ![QueryMentorship eligibility](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/del2.PNG)
 
@@ -61,14 +61,21 @@ For Deliverable 2, I wrote a query to retrieve the required columns from the Emp
 ***Image 5: Mentorship Eligibility***
 
 Through both deliverables we could see that:
-- the largest group of employees eligible for retirement are senior engineers with a count 29,414 and 28,254 senior staff who will need to be replaced.
+- the largest group of employees eligible for retirement are senior engineers with a count of 29,414 and 28,254 senior staff who will need to be replaced.
 - 1549 employees are eligible for the mentorship program
 - If you filter the mentorship_eligibility.csv created in Deliverable 2, this includes 408 Senior engineers and 289 Senior Staff
+- Judging by these findings, Pewlett-Hackard will need to implement a plan to kickstart the mentorship program very soon and a plan to fill the positions that may be vacant soon due to potential retirees
 
 ## Summary
 Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 According to the retiring titles table, a total of 90,398 roles will need to be filled. 
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 There are only 1549 retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employee. 
+
+It would be really useful to further query the Mentorship eligibility table to get a count of each employee eligible for the Mentorship program organized by job title. This way, the company can see how many mentors are available for each job title. 
+Insert image
+
+It would also be useful to add a query for the sum of potential retirees and add that to the table. 
