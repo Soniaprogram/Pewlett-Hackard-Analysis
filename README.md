@@ -75,6 +75,7 @@ According to the retiring titles table, a total of 90,398 roles will need to be 
 Looking at the mentorship eligibility query, there are only 1549 retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. 
 
 It would be really useful to further query the Mentorship eligibility table to get a count of each employee eligible for the Mentorship program organized by job title. This way, the company can see how many mentors are available for each job title. 
+
 ![newquery](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/additionalquery.PNG)
 ![newtable](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/newquery.PNG)
 
