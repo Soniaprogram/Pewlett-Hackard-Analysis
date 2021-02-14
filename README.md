@@ -61,9 +61,9 @@ For Deliverable 2, I wrote a query to retrieve the required columns from the emp
 ***Image 5: Mentorship Eligibility***
 
 Through both deliverables we could see that:
-- the largest group of employees eligible for retirement are senior engineers with a count of 29,414 and 28,254 senior staff who will need to be replaced.
+- Looking at retiring titles, the largest group of employees eligible for retirement are senior engineers with a count of 29,414 and 28,254 senior staff who will need to be replaced.
 - 1549 employees are eligible for the mentorship program
-- If you filter the mentorship_eligibility.csv created in Deliverable 2, this includes 408 Senior engineers and 289 Senior Staff
+- If you filter the mentorship_eligibility.csv created in Deliverable 2, this includes 529 Senior engineers and 569 Senior Staff eligible for mentorship
 - Judging by these findings, Pewlett-Hackard will need to implement a plan to kickstart the mentorship program very soon and a plan to fill the positions that may be vacant soon due to potential retirees
 
 ## Summary
