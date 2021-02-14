@@ -6,7 +6,7 @@ Pewlett Hackard is looking to offer retirement packages to eligible employees. B
 
 The purpose of this analysis is to determine the number of retiring employees per title and identify which employees are eligible to participate in a mentorship program. This analysis will allow the manager of Pewlett Hackard to prepare for the upcoming "silver tsunami" as many current employees reach retirement age. 
 
-For this analysis, I generated an Entity Relationship Diagram (as seen below) to highlight the relational data and created tables in SQL for each of the 6 .csv files to build up the employee database. 
+For this analysis, I generated an Entity Relationship Diagram (as seen below) to highlight the relational data and created tables in SQL for each of the six .csv files to build up the employee database. 
 
 ![ERD](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
 
@@ -22,7 +22,7 @@ Using the ERD and SQL Queries, I also created a mentorship-eligibility table tha
 
 
 ## Results
-Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+
 ### Deliverable 1: Retirement Titles
 
 For Deliverable 1, I created my first query to retrieve the required columns from the Employees and Titles table and joined both tables on the primary key. I created a new table called retirement_titles to contain this data. I filtered the data to show the employees born between Jan 1, 1952 and Dec 31, 1955 and ordered by the employee number. The outputted table had duplicate entires for employees with multiple titles over the years.
@@ -67,15 +67,18 @@ Through both deliverables we could see that:
 - Judging by these findings, Pewlett-Hackard will need to implement a plan to kickstart the mentorship program very soon and a plan to fill the positions that may be vacant soon due to potential retirees
 
 ## Summary
-Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+#### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 According to the retiring titles table, a total of 90,398 roles will need to be filled. 
 
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-There are only 1549 retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employee. 
+#### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+Looking at the mentorship eligibility query, there are only 1549 retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. 
 
 It would be really useful to further query the Mentorship eligibility table to get a count of each employee eligible for the Mentorship program organized by job title. This way, the company can see how many mentors are available for each job title. 
-Insert image
+![newquery](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/additionalquery.PNG)
+![newtable](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/additionalquerytable.PNG)
 
-It would also be useful to add a query for the sum of potential retirees and add that to the table. 
+It would be beneficial to join the above table with the retiring tables table to directly see the ratio of retiring employees and mentorship ready employees organized by job title. It would also be useful to add a query for the sum of potential retirees and add that to the table to easily see how many roles will need to be potentially filled as the "silver tsunami" approaches. 
+
+![sumquery](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/sumofretirees.PNG)
+![sum](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/sum.PNG)
