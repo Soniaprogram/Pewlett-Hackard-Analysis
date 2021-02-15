@@ -52,7 +52,7 @@ For the next query, I retrieved the number of titles from the Unique Titles tabl
 ***Image 4: Retiring Titles***
 
 ### Deliverable 2: Mentorship Eligibility
-For Deliverable 2, I wrote a query to retrieve the required columns from the employees, dep_emp, and titles tables. I used a DISTINCT ON statement to avoid duplicate results so it would only retrieve the first instance of employee number. I joined the tables and filtered to get current employees with birth dates between Jan 1, 1965 and Dec 31, 1965. I ordered the table by employee number.
+For Deliverable 2, I wrote a query to retrieve the required columns from the employees, dep_emp, and titles tables. I used a DISTINCT ON statement to avoid duplicate results so it would only retrieve the first instance of employee number. I joined the tables and filtered to get current employees with birth dates between Jan 1, 1965 and Dec 31, 1965. I ordered the table by employee number and title in descending order to obtain the latest job title.
 
 ![QueryMentorship eligibility](https://github.com/Soniaprogram/Pewlett-Hackard-Analysis/blob/main/Images/deliver2.PNG)
 
